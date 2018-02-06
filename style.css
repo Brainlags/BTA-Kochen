@@ -1,8 +1,7 @@
 /* programmieren in css immer mit: */
 /* selektor{property: value;} */
-
 /* das "*" sagt, dass die Änderung auf ALLES bezogen werden soll */
-*{
+* {
   /* border-box verhindert, dass durch padding & margin
   *  die größe eines elements immer mehr & die
   *  vorgegebene größe beibehalten wird */
@@ -13,6 +12,7 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   /* standart schriftgröße ist 16px = 1em = höhe eines großen "M"s*/
   font-size: 100%;
+  font-weight: bold;
   width: 100%;
   line-height: 1.4;
 }
@@ -22,26 +22,47 @@ body {
   margin: 0px;
 }
 
-a {
+nav a {
   /* white = ffffff = fff = rgb(255,255,255) */
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  /* die erste sekunden angabe sagt, we schnell die
+  transition verlaufen soll, während die zweite sekunden
+  angabe sagt, wie lange der browser warten soll,
+  bevor er die transition startet */
+  transition: color .5s/*2s*/
+  ease;
 }
 
+nav a:hover {
+  color: rgb(102, 205, 170);
+}
+
+/* was passiert wenn ich auf einen link geklickt habe
+nav a:visited{
+  color: pink;
+} */
+
 /* im browser bei element-auswahl (F12) grün=padding, orange=margin */
-ul {
+nav ul {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  border-bottom: 1px solid #fff;
 }
 
 /* bei "id" */
-#header{
-  background-color: rgb(40,44,52);
+#header {
+  background-color: rgb(40, 44, 52);
 }
 
 /* bei "class" */
-.wrapper{
+.wrapper {
   /* padding erstellt einen basis abstand vom rand in die mitte */
   /*padding: 50px;*/
 }
@@ -60,7 +81,30 @@ img {
 *  gewünschte gerät anpassen */
 @media (min-width: 48em) {
   #logo {
-    width: 4em;
+    width: 2em;
+  }
+  /* leerzeichen zwischen "nav" und "li" bedeutet
+  *  "in", bzw "alle "li" die in einem "nav" Stehen
+  *  sollen diese eigenschaften verändert bekommen" */
+  nav li {
+    float: left;
+    margin-right: 1em;
+    border-bottom: none;
+  }
+  nav {
+    float: right;
+    margin-top: 1.5em;
+  }
+  #header {
+    height: 4em;
+  }
+  .wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  #logo {
+    padding-top: 15px;
+    float: left;
   }
 }
 
