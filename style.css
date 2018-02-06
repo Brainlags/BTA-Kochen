@@ -1,0 +1,72 @@
+/* programmieren in css immer mit: */
+/* selektor{property: value;} */
+
+/* das "*" sagt, dass die Änderung auf ALLES bezogen werden soll */
+*{
+  /* border-box verhindert, dass durch padding & margin
+  *  die größe eines elements immer mehr & die
+  *  vorgegebene größe beibehalten wird */
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  /* standart schriftgröße ist 16px = 1em = höhe eines großen "M"s*/
+  font-size: 100%;
+  width: 100%;
+  line-height: 1.4;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  /* white = ffffff = fff = rgb(255,255,255) */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* im browser bei element-auswahl (F12) grün=padding, orange=margin */
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* bei "id" */
+#header{
+  background-color: rgb(40,44,52);
+}
+
+/* bei "class" */
+.wrapper{
+  /* padding erstellt einen basis abstand vom rand in die mitte */
+  /*padding: 50px;*/
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+#logo {
+  width: 2em;
+}
+
+/* mit "@media" kann man abfragen auf welchem gerät etwas
+*  dargestellt werden soll und die größe für jedes
+*  gewünschte gerät anpassen */
+@media (min-width: 48em) {
+  #logo {
+    width: 4em;
+  }
+}
+
+/**
+* Bei mehreren Zeilen Kommentar,
+* verwendet man in jeder Zeile
+* ein zusätzliches Sternchen,
+* zur besseren Übersicht
+**/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- html = parent, head & body = children -->
+<!-- html, head & body sind anfangs immer vorhanden -->
+<html>
+  <!-- im head passiert alles was man im "window" NICHT sieht -->
+  <head>
+    <!-- deklarierung der sonderzeichen verwendung (utf-8 = ü, ö, ä, etc.) -->
+    <meta charset="utf-8">
+    <!-- Tabulator & Google Anzeige Schriftzug -->
+    <title>Kochen 2.0 | Legger Schmegger, Schlemmer Lämmer</title>
+    <!-- gibt dem programm die fähigkeit medienabhängige befehle wie "@media" im css code zu erkennen -->
+    <!-- viewport = inneres Fenster im browser eines gerätes -->
+    <!--- content:"width=device-width" sagt dem pc "mach das Fenster so weit wie der bildschirm des gerätes weit ist" -->
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <!-- Google - Seitenbeschreibung / Beispieltext / Metatext -->
+    <meta name="description" content="Bla Bla">
+    <!-- index = google soll die seite indexieren / follow = google darf die seite in der suchmaschine auflisten -->
+    <meta name="robots" content="index, follow">
+    <!-- referenz auf css datei, dateien im selben ordner wie der index können direkt angegeben werden -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!-- im body passiert alles was man im "window" sehen soll -->
+  <body>
+    <!-- Jetzt kommt der Header -->
+    <header id="header">
+      <!-- gruppierung von elementen -->
+      <!-- "id" ist einzigartig und darf immer nur einem element vergeben werden -->
+      <!-- "class" wird verwendet wenn man änderungen auf mehrere elemente anwenden will,
+       damit es später keine probleme gibt, wenn man auf die class/id referenzeiren will -->
+      <div class="wrapper">
+        <div id="logo">
+          <a href="index.html" title="Hier geht's zur Startseite">
+            <!-- alternativtext wird angezeigt, wenn das bild nicht geladen werden kann -->
+            <img src="img\logo.svg" alt="Logo Kochen 2.0" height="100%">
+          </a>
+        </div>
+        <!-- Jetzt kommt die Navigation -->
+        <nav>
+          <!-- never only "ul" or only "li" - always "ul+li" -->
+          <ul>
+            <!-- ein list item hat immer nur ein element -->
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Rezepte</a>
+            </li>
+            <li>
+              <a href="#">Über uns</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Jetzt schliesst der Header -->
+  </body>
+</html>
+<!-- -->
