@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- html = parent, head & body = children -->
 <!-- html, head & body sind anfangs immer vorhanden -->
-<html>
+<html lang="de">
   <!-- im head passiert alles was man im "window" NICHT sieht -->
   <head>
     <!-- deklarierung der sonderzeichen verwendung (utf-8 = ü, ö, ä, etc.) -->
@@ -33,7 +33,7 @@
         <div id="logo">
           <a href="index.html" title="Hier geht's zur Startseite">
             <!-- alternativtext wird angezeigt, wenn das bild nicht geladen werden kann -->
-            <img src="img\logo.svg" alt="Logo Kochen 2.0" height="100%">
+            <img src="img/logo.svg" alt="Logo Kochen 2.0" height="100%">
           </a>
         </div>
         <!-- Jetzt kommt die Navigation -->
@@ -120,10 +120,10 @@
           </div>
         </article>
         <article class="card">
-          <img src="img/reispfanne-lissabon.jpg" alt="Reispfanne Lissabon">
+          <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei">
           <div class="border">
             <h3>
-              <a class="card-title" href="#">Reispfanne Lissabon</a>
+              <a class="card-title" href="#">Toast mit Ei</a>
             </h3>
             <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
                gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
@@ -132,10 +132,10 @@
           </div>
         </article>
         <article class="card">
-          <img src="img/reispfanne-lissabon.jpg" alt="Reispfanne Lissabon">
+          <img src="img/pancakes.jpg" alt="Pancakes">
           <div class="border">
             <h3>
-              <a class="card-title" href="#">Reispfanne Lissabon</a>
+              <a class="card-title" href="#">Pancakes mit frischen Früchten</a>
             </h3>
             <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
                gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
@@ -149,9 +149,9 @@
         <section class="search">
           <h2>Finde dein Rezept</h2>
           <form class="searchform" action="" method="get">
-            <input type="search" name="q" value="" placeholder="Mmmh..">
-            <button type="submit" name="button">
-              <span class="icon-search">Suchen</span>
+            <input type="search" name="q" value="" placeholder="Mmmh.." id="searchvalue">
+            <button type="submit" name="button" id="searchbutton">
+              <span class="icon-search"></span>
             </button>
           </form>
         </section>
@@ -170,6 +170,36 @@
         </section>
       </aside>
     </div> <!-- Ende Content Sektion -->
+    <!-- Start Footer -->
+    <footer id="footer">
+      <div class="wrapper">
+        <!-- Start Footer Navigation -->
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+            <li>
+              <a href="#">Impressum</a>
+            </li>
+            <li>
+              <a href="#">Datenschutz</a>
+            </li>
+          </ul>
+        </nav>  <!-- Ende Footer Navigation -->
+          <ul class="social-list">
+            <li>
+              <a href="http://facebook.com" class="icon-facebook" target="_blank"></a>
+            </li>
+            <li>
+              <a href="http://youtube.com" class="icon-youtube" target="_blank"></a>
+            </li>
+          <li>
+            <a href="http://instagram.com" class="icon-instagram" target="_blank"></a>
+          </li>
+          </ul>
+      </div>
+    </footer> <!-- Ende Footer -->
 
     <!-- Start Javascript -->
     <!-- Suchen button macht sound geräusch wenn man auf "suchen" clickt -->

@@ -26,6 +26,11 @@ p{
   font-family: 'PT Serif', serif;
 }
 
+li a{
+  color: #fff;
+  text-decoration: none;
+}
+
 nav a {
   /* white = ffffff = fff = rgb(255,255,255) */
   color: #fff;
@@ -69,6 +74,8 @@ nav li {
 .wrapper {
   /* padding erstellt einen basis abstand vom rand in die mitte */
   /*padding: 50px;*/
+  height: 100%;
+  position: relative;
 }
 
 img {
@@ -178,6 +185,69 @@ img {
   font-size: 1.5rem;
 }
 
+.searchform{
+  border: 1px solid #000;
+  position: relative;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.searchform input, #searchvalue{
+  border: none;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: .5rem;
+  padding-right: 2.5rem;
+}
+
+.search button, #searchbutton{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.author, .affiliate{
+  border-top: 1px dotted #000;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+
+.author img{
+  border-radius: 50%;
+  margin: auto;
+  /* statt margin auch möglich hier:
+     display: inline-block; */
+}
+
+.sidebar img{
+  width: 50%;
+  display: inline-block;
+}
+
+#footer {
+  clear: both;
+  background-color: rgb(40, 44, 52);
+  text-align: center;
+}
+
+#footer li{
+  padding: 5px;
+  border: none;
+}
+
+.social-list{
+  padding: 0;
+}
+
+.social-list li{
+  display: inline-block;
+}
+
 /*====== @media Sektion====================================================*/
 /* mit "@media" kann man abfragen auf welchem gerät etwas
 *  dargestellt werden soll und die größe für jedes
@@ -248,6 +318,32 @@ img {
   .sidebar{
     width: 33.33333334%;
     float: right;
+  }
+
+  #footer{
+    position: relative;
+    height: 100px;
+  }
+
+  #footer nav{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+
+  .social-list{
+    font-size: 200%;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .social-list a{
+    padding: 8px;
   }
 }
 
