@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   /* standart schriftgröße ist 16px = 1em = höhe eines großen "M"s*/
   font-size: 100%;
   font-weight: bold;
@@ -20,6 +20,10 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+}
+
+p{
+  font-family: 'PT Serif', serif;
 }
 
 nav a {
@@ -113,6 +117,7 @@ img {
 
 .spacing p{
   margin: 4rem;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .spacing{
@@ -141,10 +146,6 @@ img {
   margin-bottom: 1rem;
 }
 
-.card p{
-  font-family: serif;
-}
-
 .card img{
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -157,7 +158,6 @@ img {
 .card-title{
   color: #000;
   text-decoration: none;
-  font-family: calibri, 20px, bolder;
 }
 
 .card-title:hover{
@@ -167,6 +167,15 @@ img {
 .button{
   display: block;
   padding: .5rem;
+}
+
+.sidebar{
+  text-align: center;
+}
+
+.sidebar h2{
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 /*====== @media Sektion====================================================*/
@@ -239,7 +248,6 @@ img {
   .sidebar{
     width: 33.33333334%;
     float: right;
-    text-align: center;
   }
 }
 

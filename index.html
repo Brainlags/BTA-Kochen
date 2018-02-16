@@ -18,6 +18,8 @@
     <meta name="robots" content="index, follow">
     <!-- referenz auf css datei, dateien im selben ordner wie der index können direkt angegeben werden -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="icons.css">
   </head>
   <!-- im body passiert alles was man im "window" sehen soll -->
   <body>
@@ -149,7 +151,7 @@
           <form class="searchform" action="" method="get">
             <input type="search" name="q" value="" placeholder="Mmmh..">
             <button type="submit" name="button">
-              <span>Suchen</span>
+              <span class="icon-search">Suchen</span>
             </button>
           </form>
         </section>
@@ -168,5 +170,21 @@
         </section>
       </aside>
     </div> <!-- Ende Content Sektion -->
+
+    <!-- Start Javascript -->
+    <!-- Suchen button macht sound geräusch wenn man auf "suchen" clickt -->
+    <script type="text/javascript">
+      var b = document.getElementById("searchbutton");
+      b.addEventListener("click", function(e){
+        e.preventDefault();
+        var audio = new Audio('mmmh.mp3');
+        audio.play();
+        audio.onended = function() {
+            var q = document.getElementById("searchvalue").value;
+            window.location.href = 'http://www.google.com' + '/search?q=' + q;
+        };
+      });
+  </script> <!-- Ende Javascript -->
+
   </body>
 </html>
