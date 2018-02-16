@@ -52,10 +52,121 @@
               <a href="#">Kontakt</a>
             </li>
           </ul>
-        </nav>
+        </nav>  <!-- Navigation endet hier -->
       </div>
-    </header>
-    <!-- Jetzt schliesst der Header -->
+    </header>  <!-- Hier endet der Header -->
+    <!-- Start Welcome Sektion -->
+    <div class="welcome">
+      <div class="spacing">
+        <h1>Die besten Rezepte für Webworker</h1>
+        <p>Es gibt mehr als Pizza & Ravioli!</p>
+        <a href="#main">Entdecke die Leckereien</a>
+      </div>
+    </div> <!-- Ende Welcome Sektion -->
+    <!-- Start Content Sektion -->
+    <div class="content wrapper">
+      <!-- Start Main Sektion -->
+      <!-- main darf auf jeder seite nur einmal vorkommen!!! -->
+      <main id="main">
+        <h2 class="main-title">Die neuesten Rezepte</h2>
+        <article class="card">
+          <img src="img/farfalle.jpg" alt="Farfalle mit Pesto">
+          <div class="border">
+            <h3>
+              <!-- der link in der überschrift ist nur für die google syntax (SEO) weil google immer den ersten link verwendet, wenn mehrere links auf die selbe seite verweisen -->
+              <a class="card-title" href="#">Farfalle mit Pesto</a>
+            </h3>
+            <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen, gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
+               genieße.</p>
+            <a class="button" href="#">Zum Rezept</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reispfanne-lissabon.jpg" alt="Reispfanne Lissabon">
+          <div class="border">
+            <h3>
+              <a class="card-title" href="#">Reispfanne Lissabon</a>
+            </h3>
+            <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
+               gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
+               genieße.</p>
+            <a class="button" href="#">Zum Rezept</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/kuerbissuppe.jpg" alt="Kürbissuppe">
+          <div class="border">
+            <h3>
+              <a class="card-title" href="#">Kürbissuppe</a>
+            </h3>
+            <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
+               gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
+               genieße.</p>
+            <a class="button" href="#">Zum Rezept</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/burger.jpg" alt="Sauguter Burger">
+          <div class="border">
+            <h3>
+              <a class="card-title" href="#">Sauguter Burger</a>
+            </h3>
+            <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
+               gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
+               genieße.</p>
+            <a class="button" href="#">Zum Rezept</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reispfanne-lissabon.jpg" alt="Reispfanne Lissabon">
+          <div class="border">
+            <h3>
+              <a class="card-title" href="#">Reispfanne Lissabon</a>
+            </h3>
+            <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
+               gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
+               genieße.</p>
+            <a class="button" href="#">Zum Rezept</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/reispfanne-lissabon.jpg" alt="Reispfanne Lissabon">
+          <div class="border">
+            <h3>
+              <a class="card-title" href="#">Reispfanne Lissabon</a>
+            </h3>
+            <p>Eine wunderbare Heiterkeit hat meine ganze Seele eingenommen,
+               gleich den süßen Frühlingsmorgen, die ich mit ganzem Herzen
+               genieße.</p>
+            <a class="button" href="#">Zum Rezept</a>
+          </div>
+        </article>
+      </main> <!-- Ende Main Sektion -->
+      <aside class="sidebar">
+        <!-- section wird meist verwendet, wenn noch überschriften und mehrere andere elemente in einen container gelegt werden -->
+        <section class="search">
+          <h2>Finde dein Rezept</h2>
+          <form class="searchform" action="" method="get">
+            <input type="search" name="q" value="" placeholder="Mmmh..">
+            <button type="submit" name="button">
+              <span>Suchen</span>
+            </button>
+          </form>
+        </section>
+        <section class="author">
+          <img src="img/koch.jpg" alt="Kochender Frosch">
+          <h2>Hier kocht der Chef</h2>
+          <p class="cheftext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section class="affiliate">
+          <h2>Zu faul zum Kochen?</h2>
+          <img src="https://d2jdyzt6tc17s.cloudfront.net/products/images2/4502050496_4306188047032_01.jpg.jpg" alt="Ravioli in der Dose">
+          <p>Hol dir tolle Fertiggerichte bei Amazon</p>
+          <a href="https://www.amazon.de/Jeden-Tag-Ravioli-Tomatenso%C3%9Fe-Pack/dp/B004W8083U" target="_blank">
+            <img src="img/amazon-fresh.gif" alt="Amazon Fresh Gif">
+          </a>
+        </section>
+      </aside>
+    </div> <!-- Ende Content Sektion -->
   </body>
 </html>
-<!-- -->

@@ -76,6 +76,100 @@ img {
   width: 2em;
 }
 
+.welcome{
+  width: 100%;
+  /* "vh" = viewport height = bildschirmhöhe*/
+  height: 100vh;
+  min-height: 400px;
+  text-align: center;
+  color: #fff;
+  background-image: url(img/intro.jpg);
+  /* cover = bild passt sich der größe nach dem bildschirm an
+     center = bild ist bei jeglicher bildschirmgröße immer zentriert
+     attachment: fixed = bild bleibt an seiner position und scrollt nicht
+     mit dem rest der website mit */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.welcome a, .button{
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(102, 205, 170);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+  /* alles was in der "hover" sektion angegeben wird,
+     soll von transition verändert werden
+     mit der angabe hinter transition gibt man an,
+     was verändert werden soll*/
+  transition: all .5s;
+}
+
+.welcome a:hover, .button:hover{
+  background-color: rgb(69, 139, 116);
+}
+
+.spacing p{
+  margin: 4rem;
+}
+
+.spacing{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform = verschiebung auf X & Y Achsen*/
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.border{
+  border: 1px solid #000;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem;
+}
+
+.main-title{
+  text-align: center;
+}
+
+.card{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card p{
+  font-family: serif;
+}
+
+.card img{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card h3{
+  margin: 0;
+}
+
+.card-title{
+  color: #000;
+  text-decoration: none;
+  font-family: calibri, 20px, bolder;
+}
+
+.card-title:hover{
+  text-decoration: underline;
+}
+
+.button{
+  display: block;
+  padding: .5rem;
+}
+
+/*====== @media Sektion====================================================*/
 /* mit "@media" kann man abfragen auf welchem gerät etwas
 *  dargestellt werden soll und die größe für jedes
 *  gewünschte gerät anpassen */
@@ -83,6 +177,7 @@ img {
   #logo {
     width: 2em;
   }
+
   /* leerzeichen zwischen "nav" und "li" bedeutet
   *  "in", bzw "alle "li" die in einem "nav" Stehen
   *  sollen diese eigenschaften verändert bekommen" */
@@ -91,20 +186,60 @@ img {
     margin-right: 1em;
     border-bottom: none;
   }
+
   nav {
     float: right;
     margin-top: 1.5em;
   }
+
   #header {
     height: 4em;
   }
+
   .wrapper {
     width: 90%;
     margin: auto;
   }
+
   #logo {
     padding-top: 15px;
     float: left;
+  }
+
+  .spacing h1{
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .spacing p{
+    font-size: 2rem;
+  }
+
+  .spacing a{
+    font-size: 1.5rem;
+  }
+
+  #main{
+    width: 66.66666667%;
+    float: left;
+  }
+
+  .card{
+    width: 50%;
+    float: left;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-title{
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .sidebar{
+    width: 33.33333334%;
+    float: right;
+    text-align: center;
   }
 }
 
